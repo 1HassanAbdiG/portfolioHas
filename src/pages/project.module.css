@@ -1,0 +1,296 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    position: relative; /* Position relative pour le pseudo-élément 
+    
+
+    background-color: #130429;
+    border-top: solid   #29f5c7; /* Supprimez la bordure existante */
+    font-size: 1.3rem; /* Ajoutez la taille de police appropriée */
+    color: #29f5c7;
+    font-family: "lobster", cursive;
+    margin-top: 20px;
+   
+}
+
+.container h1 {
+ 
+    padding: 5px 30px;
+    border: none; /* Supprimez la bordure existante */
+    font-size: 1.3rem; /* Ajoutez la taille de police appropriée */
+    color: #29f5c7;
+    font-family: "lobster", cursive;
+    position: relative; /* Position relative pour le pseudo-élément ::before */
+  }
+  
+  .container h1::before {
+    
+    content: "";
+    position: absolute;
+    top: -15px; /* Ajustez la position du triangle vers le haut */
+    left: 50%;
+    transform: translateX(-50%); /* Centre le triangle horizontalement */
+    border-width: 0 300px 15px 300px; /* Agrandissez le triangle en largeur et en hauteur */
+    border-style: solid;
+    border-color: transparent transparent #29f5c7 transparent; /* Couleur de la bordure du triangle */
+    box-shadow: 0 6px 6px rgba(245, 246, 246, 0.2); /* Ajoute une ombre en haut */
+  }
+ 
+  
+  
+.projectpage{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    border-bottom: solid   #29f5c7;
+    
+   
+    margin: 50px auto;
+    border-radius: 50px;
+    box-shadow: 4px 8px #29f5c7 , -1em  2em  #9c96af;
+
+
+}
+
+/* ProjectPage.css */
+
+
+img{
+    width: 400px;
+    height: 400px;
+   
+    margin-left : auto !important;
+    margin-right :auto! important;
+    border-radius: 30px;
+
+}
+
+
+  
+ 
+  
+
+
+.projectimage  {
+    max-width: 90%;;
+    
+    
+    /* Limiter la hauteur de l'image */
+    margin:  20px;
+   
+
+    /* Marge à droite de l'image */
+}
+
+
+.projectdescription {
+    
+    max-width: 700px;
+    /* Ajuster la largeur à 100% pour les petits écrans */
+    text-align: left;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.projectdescription p {
+   
+    width: 100%;
+    font-size: 23px;
+    /* Augmenter la taille du texte */
+    line-height: 1.5;
+    color: #769a9a;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    border: solid 2px #29f5c7;  
+   
+    
+    border-radius: 50px;
+   
+
+
+  
+   
+
+    color: #29f5c7;
+   
+    
+
+   
+    cursor: pointer;
+  
+    transition: background-color 0.3s ease;
+   text-decoration: none;
+
+
+
+
+}
+
+.button:hover {
+    background-color: #29f5c7;
+    color: #808e9a;
+}
+
+.button::after {
+    content: "→";
+    margin-left: 5px;
+}
+
+
+
+/**********/
+/* styles.module.css */
+
+.projectInfo {
+  
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .openingStatement {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .tools {
+    width: 80%;
+    display: flex;
+    justify-content:center;
+   margin-left: 40px;
+    color: black;
+  }
+  
+  .toolItem1 , .toolItem2 ,.toolItem3{
+    flex: 1;
+    padding: 10px;
+    background-color: #f2f2f2;
+   
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  
+  .projectImpact {
+    font-size: 1.1rem;
+  }
+  /* styles.module.css */
+
+.toolItem {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #1d124b;
+    border-right: 2.5px solid #29f5c7; /* Bordure en haut en rouge */
+    border-bottom: 5px solid #bdd7e2; /* Bordure en bas en violet */
+    border-left: 2.5px solid #29f5c7;; /* Bordure à gauche en rouge */
+    box-shadow: 2px 3px #a55b70 ;
+   
+    text-align: center;
+    color: white;
+  }
+  
+  /* ... Les autres styles restent inchangés */
+  /* NavigationBar.css */
+
+.navigationbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+
+  
+  .items {
+    display: flex;
+    overflow-x: hidden;
+  }
+  
+  .navitem2 {
+    padding: 0 20px;
+    font-size: 18px;
+    white-space: nowrap;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navitem:hover {
+    color: #0074d9;
+  }
+  
+  /* Ajustez les couleurs, la taille de la police et d'autres styles selon vos préférences. */
+
+.lienMemePage{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 1rem;
+
+    flex: 1;
+    
+    margin: 0 auto;
+    background-color: #130429;
+    border-right: 2.5px solid#29f5c7; /* Bordure en haut en rouge */
+    border-bottom: 5px solid #bdd7e2; /* Bordure en bas en violet */
+    border-left: 2.5px solid #29f5c7; /* Bordure à gauche en rouge */
+    box-shadow: 2px 3px #a55b70 ;
+   
+  
+    
+   
+}
+.lienMemePage button {
+    margin: 10px;
+      
+    border: solid 2.5px  #152d37;
+    border-radius: 16%;
+    padding: 1% 2%;
+    
+    cursor: pointer;
+    color: rgb(5, 0, 1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    
+
+}
+/******************/
+/* Ajouter une règle de média query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .container{
+        margin-top: 50px;
+    }
+    .projectcontent {
+        flex-direction: column;
+    }
+
+    .projectdescription .projectimage img {
+        max-width: 100%;
+    }
+
+
+img{
+    width: 98%;
+    height: 300px;  
+   
+    
+
+}
+.lienMemePage button {
+    font-size: 8px;
+    margin: 2px;
+}
+}
