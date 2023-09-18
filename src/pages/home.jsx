@@ -12,7 +12,7 @@ function Home() {
     <div className={styles.div2}>Computer Programmer &</div>
     <div className={styles.div2}>Artificial Intelligence (AI) Programmer</div>
     <p>
-      I am passionate about the world of programming and artificial intelligence.
+      I My Projects am passionate about the world of programming and artificial intelligence.
       With a strong background in application development and specific expertise
       in artificial intelligence, I am committed to creating innovative solutions
       for real-world problems. My ability to design and implement machine learning
