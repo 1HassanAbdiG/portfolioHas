@@ -1,5 +1,5 @@
 // ProjectPage.jsx
-import {React,useRef} from 'react';
+import { React, useRef } from 'react';
 import { Link } from 'react-router-dom'; // For handling navigation
 
 
@@ -33,9 +33,9 @@ const Project = () => {
       <h1>My Projects</h1>
       <div className={styles.lienMemePage}>
         <button onClick={() => scrollToSection(webProjectRef)}>Web Project</button >
-        <button  onClick={() => scrollToSection(desktopProjectRef)}>Desktop Project</button >
-        <button  onClick={() => scrollToSection(melanomaDetectionRef)}>Melanoma Detection</button >
-        <button  onClick={() => scrollToSection(iOSANDROIDRef)}>iOS ANDROID</button >
+        <button onClick={() => scrollToSection(desktopProjectRef)}>Desktop Project</button >
+        <button onClick={() => scrollToSection(melanomaDetectionRef)}>Melanoma Detection</button >
+        <button onClick={() => scrollToSection(iOSANDROIDRef)}>iOS ANDROID</button >
       </div>
 
       <section className={styles.projectpage} ref={webProjectRef}>
@@ -50,11 +50,11 @@ const Project = () => {
               I had the opportunity to work on several exciting web projects, each highlighting different technical skills and frameworks.
             </p>
             <div className={styles.tools}>
-            <div className={styles.toolItem}>HTML</div>
+              <div className={styles.toolItem}>HTML</div>
               <div className={styles.toolItem}>React</div>
-             
+
               <div className={styles.toolItem}>Others</div>
-             
+
             </div>
             <p className={styles.projectImpact}>
               Each project had its own unique challenges, specific goals, and tailored technological solutions, thereby contributing to expanding my experience and understanding of web development.
@@ -67,14 +67,11 @@ const Project = () => {
       </section>
 
       <section className={styles.projectpage} ref={desktopProjectRef}>
-
         <div className={styles.projectimage}>
           <img src={desktop} alt="Project" />
         </div>
-
         <div className={styles.projectdescription}>
           <h2 id="DesktopProject">Desktop Project</h2>
-           
 
           <div className={styles.projectInfo}>
             <p className={styles.openingStatement}>
@@ -98,28 +95,29 @@ const Project = () => {
       </section>
 
       <section className={styles.projectpage} ref={melanomaDetectionRef}>
-
         <div className={styles.projectimage}>
+
+          
           <img src={myPhoto} alt="Project" />
         </div>
 
         <div className={styles.projectdescription}>
-          <h2 id="MelanomaDetection">Melanoma Detection with Artificial Intelligence</h2>
-        
-    <div className={styles.projectInfo}>
-      <p className={styles.openingStatement}>
-        I worked on a Melanoma Detection project using Artificial Intelligence (AI) to identify skin cancer from images of moles and skin lesions.
-      </p>
-      <div className={styles.tools}>
-        <div className={styles.toolItem}>Machine Learning</div>
-        <div className={styles.toolItem}>Python</div>
-        <div className={styles.toolItem}>Deep Learning</div>
-      </div>
-      <p className={styles.projectImpact}>
-        This project provided hands-on experience in medical image analysis and AI. It involved developing AI models to analyze skin images, detect melanoma, and support early cancer diagnosis, highlighting the potential of AI in healthcare.
-      </p>
-    </div>
- 
+          <h2 id="MelanomaDetection">Melanoma Detection </h2>
+
+          <div className={styles.projectInfo}>
+            <p className={styles.openingStatement}>
+              I worked on a Melanoma Detection project using Artificial Intelligence (AI) to identify skin cancer from images of moles and skin lesions.
+            </p>
+            <div className={styles.tools}>
+              <div className={styles.toolItem}>Machine Learning</div>
+              <div className={styles.toolItem}>Python</div>
+              <div className={styles.toolItem}>Deep Learning</div>
+            </div>
+            <p className={styles.projectImpact}>
+              This project provided hands-on experience in medical image analysis and AI. It involved developing AI models to analyze skin images, detect melanoma, and support early cancer diagnosis, highlighting the potential of AI in healthcare.
+            </p>
+          </div>
+
 
           <Link to="/melanomadetails" className={styles.button}>
             Learn More&nbsp;
@@ -135,30 +133,30 @@ const Project = () => {
 
         <div className={styles.projectdescription}>
           <h2  >IOS end endroid</h2>
-        
-     
-    <div className={styles.projectInfo}>
-      <p className={styles.openingStatement}>
-        I worked on exciting mobile app development projects for both iOS and Android platforms.
-      </p>
-      <div className={styles.tools}>
-        <div className={styles.toolItem}>Swift</div>
-        <div className={styles.toolItem}>Xcode</div>
-        <div className={styles.toolItem}>Java</div>
-        
-      </div>
-      <p className={styles.projectImpact}>
-        These experiences provided hands-on learning in mobile app and game development, including UI/UX design, user interaction, and performance optimization. I also gained insights into the importance of delivering seamless and enjoyable user experiences, regardless of the platform.
-      </p>
-      </div>
- 
 
- <Link to="/melanomadetails" className={styles.button}>
-   Learn More&nbsp;
- </Link>
-</div>
 
-</section>
+          <div className={styles.projectInfo}>
+            <p className={styles.openingStatement}>
+              I worked on exciting mobile app development projects for both iOS and Android platforms.
+            </p>
+            <div className={styles.tools}>
+              <div className={styles.toolItem}>Swift</div>
+              <div className={styles.toolItem}>Xcode</div>
+              <div className={styles.toolItem}>Java</div>
+
+            </div>
+            <p className={styles.projectImpact}>
+              These experiences provided hands-on learning in mobile app and game development, including UI/UX design, user interaction, and performance optimization. I also gained insights into the importance of delivering seamless and enjoyable user experiences, regardless of the platform.
+            </p>
+          </div>
+
+
+          <Link to="/melanomadetails" className={styles.button}>
+            Learn More&nbsp;
+          </Link>
+        </div>
+
+      </section>
     </div>
   );
 };
