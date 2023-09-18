@@ -39,7 +39,6 @@ const Project = () => {
       </div>
 
       <section className={styles.projectpage} ref={webProjectRef}>
-
         <div className={styles.projectimage}>
           <img src={survey} alt="Project" />
         </div>
@@ -65,7 +64,6 @@ const Project = () => {
             Learn More&nbsp;
           </Link>
         </div>
-
       </section>
 
       <section className={styles.projectpage} ref={desktopProjectRef}>
