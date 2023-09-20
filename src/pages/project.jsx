@@ -30,19 +30,22 @@ const Project = () => {
 
   return (
     <div className={styles.container}>
-      <h1>My Projects</h1>
-      <div className={styles.lienMemePage}>
-        <button onClick={() => scrollToSection(webProjectRef)}>Web Project</button >
-        <button onClick={() => scrollToSection(desktopProjectRef)}>Desktop Project</button >
-        <button onClick={() => scrollToSection(melanomaDetectionRef)}>Melanoma Detection</button >
-        <button onClick={() => scrollToSection(iOSANDROIDRef)}>iOS ANDROID</button >
+      <div className="entete">
+        <h1>My Projects</h1>
+        <div className={styles.lienMemePage}>
+          <button onClick={() => scrollToSection(webProjectRef)}>Web Project</button >
+          <button onClick={() => scrollToSection(desktopProjectRef)}>Desktop Project</button >
+          <button onClick={() => scrollToSection(melanomaDetectionRef)}>Melanoma Detection</button >
+          <button onClick={() => scrollToSection(iOSANDROIDRef)}>iOS ANDROID</button >
+        </div>
+
       </div>
+
 
       <section className={styles.projectpage} ref={webProjectRef}>
         <div className={styles.projectimage}>
           <img src={survey} alt="Project" />
         </div>
-
         <div className={styles.projectdescription}>
           <h2 id="WebProject">Web Project</h2>
           <div className={styles.projectInfo}>
@@ -52,9 +55,7 @@ const Project = () => {
             <div className={styles.tools}>
               <div className={styles.toolItem}>HTML</div>
               <div className={styles.toolItem}>React</div>
-
               <div className={styles.toolItem}>Others</div>
-
             </div>
             <p className={styles.projectImpact}>
               Each project had its own unique challenges, specific goals, and tailored technological solutions, thereby contributing to expanding my experience and understanding of web development.
@@ -96,11 +97,8 @@ const Project = () => {
 
       <section className={styles.projectpage} ref={melanomaDetectionRef}>
         <div className={styles.projectimage}>
-
-          
           <img src={myPhoto} alt="Project" />
         </div>
-
         <div className={styles.projectdescription}>
           <h2 id="MelanomaDetection">Melanoma Detection </h2>
 
@@ -132,7 +130,7 @@ const Project = () => {
         </div>
 
         <div className={styles.projectdescription}>
-          <h2  >IOS end endroid</h2>
+          <h2  >IOS end endroid</h2>
 
 
           <div className={styles.projectInfo}>
@@ -157,6 +155,9 @@ const Project = () => {
         </div>
 
       </section>
+
+
+
     </div>
   );
 };

@@ -74,6 +74,7 @@ p {
         font-size: 4vw;
     }
     .div2 {
+        
         font-size: 4vw;
     }  
     p {
@@ -89,10 +90,20 @@ p {
 /* Media Query pour écran jusqu'à 768px */
 @media screen and (max-width: 768px) {  
     .div1 {
-        font-size: 7vw;
+        width: 90%;
+        font-size: 5vw;
+        margin-top: 10px;
+       
+       
     }
     .div2 {
-        font-size: 8vw;
+
+        margin-top: 10px;
+         width: 90%;
+         font-size: 6vw;
+      
+       
+        align-items: center;
     }   
 
     .detailButton {

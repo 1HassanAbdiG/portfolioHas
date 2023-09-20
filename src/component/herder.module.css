@@ -14,7 +14,7 @@ header{
 }
 
 .droite h1{
-    font-size:2vw ;
+    font-size: 20px ;
 }
 
 .droite .imag{
@@ -96,7 +96,7 @@ span {
     }
     nav {
         
-        padding: 10px;
+        padding: 12px;
     }
     .nav.active {
        
@@ -104,11 +104,10 @@ span {
         position: absolute;
       font-size: 14px;
       top: 40px;
-      right: 20px;
-      
+     
       width: 80%;
       background-color: #130429;
-      padding: 1rem;
+      
       border-radius: 8px;
       border: solid #29f5c7;
     }

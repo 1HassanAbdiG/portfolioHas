@@ -1,264 +1,11 @@
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  /* Position relative pour le pseudo-élément 
-    
-
-    background-color: #130429;
-    border-top: solid   #29f5c7; /* Supprimez la bordure existante */
-  font-size: 1.3rem;
-  /* Ajoutez la taille de police appropriée */
-  color: #29f5c7;
-
-  margin-top: 20px;
-
-}
-
-.container h1 {
-
-  padding: 5px 30px;
-  border: none;
-  /* Supprimez la bordure existante */
-  font-size: 1.3rem;
-  /* Ajoutez la taille de police appropriée */
-  color: #29f5c7;
-
-  position: relative;
-  /* Position relative pour le pseudo-élément ::before */
-}
-
-.container h1::before {
-
-  content: "";
-  position: absolute;
-  top: -15px;
-  /* Ajustez la position du triangle vers le haut */
-  left: 50%;
-  transform: translateX(-50%);
-  /* Centre le triangle horizontalement */
-  border-width: 0 300px 15px 300px;
-  /* Agrandissez le triangle en largeur et en hauteur */
-  border-style: solid;
-  border-color: transparent transparent #29f5c7 transparent;
-  /* Couleur de la bordure du triangle */
-  box-shadow: 0 6px 6px rgba(245, 246, 246, 0.2);
-  /* Ajoute une ombre en haut */
-}
-
-
-
-.projectpage {
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 0 50px;
-  border-bottom: solid #29f5c7;
-
-
-  margin: 50px auto;
-  border-radius: 50px;
-  box-shadow: 4px 8px #29f5c7, -1em 2em #9c96af;
-
-
-}
-
-/* ProjectPage.css */
-
-
-img {
-  width: 400px;
-  height: 400px;
-
-  margin-left: auto !important;
-  margin-right: auto ! important;
-  border-radius: 30px;
-
-}
-
-
-
-
-
-
-
-.projectimage {
-  max-width: 90%;
-  ;
-
-
-  /* Limiter la hauteur de l'image */
-  margin: 20px;
-
-
-  /* Marge à droite de l'image */
-}
-
-
-.projectdescription {
-
-  max-width: 700px;
-  /* Ajuster la largeur à 100% pour les petits écrans */
-  text-align: left;
-  padding: 20px;
-}
-
-h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.projectdescription p {
-
-  width: 100%;
-  font-size: 23px;
-  /* Augmenter la taille du texte */
-  line-height: 1.5;
-  color: #769a9a;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 30px;
-  border: solid 2px #29f5c7;
-
-
-  border-radius: 50px;
-
-
-
-
-
-
-  color: #29f5c7;
-
-
-
-
-  cursor: pointer;
-
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-
-
-
-
-}
-
-.button:hover {
-  background-color: #29f5c7;
-  color: #808e9a;
-}
-
-.button::after {
-  content: "→";
-  margin-left: 5px;
-}
-
-
-
-/**********/
-/* styles.module.css */
-
-.projectInfo {
-
-  width: 90%;
-  margin: 0 auto;
-}
-
-.openingStatement {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.tools {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  margin-left: 40px;
-  color: black;
-}
-
-.toolItem1,
-.toolItem2,
-.toolItem3 {
-  flex: 1;
-  padding: 10px;
-  background-color: #f2f2f2;
-
-  border-radius: 5px;
-  margin: 0 5px;
-}
-
-.projectImpact {
-  font-size: 1.1rem;
-}
-
-/* styles.module.css */
-
-.toolItem {
-  flex: 1;
-  padding: 10px;
-  margin: 0 5px;
-  background-color: #1d124b;
-  border-right: 2.5px solid #29f5c7;
-  /* Bordure en haut en rouge */
-  border-bottom: 5px solid #bdd7e2;
-  /* Bordure en bas en violet */
-  border-left: 2.5px solid #29f5c7;
-  ;
-  /* Bordure à gauche en rouge */
-  box-shadow: 2px 3px #a55b70;
-
-  text-align: center;
-  color: white;
-}
-
-/* ... Les autres styles restent inchangés */
-/* NavigationBar.css */
-
-.navigationbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-}
-
-
-
-.items {
-  display: flex;
-  overflow-x: hidden;
-}
-
-.navitem2 {
-  padding: 0 20px;
-  font-size: 18px;
-  white-space: nowrap;
-  transition: transform 0.3s ease-in-out;
-}
-
-.navitem:hover {
-  color: #0074d9;
-}
-
-/* Ajustez les couleurs, la taille de la police et d'autres styles selon vos préférences. */
-
+/* Styles pour le conteneur principal */
+/************la partie fixe**/
 .lienMemePage {
-  width: 80%;
+  width: 300PX;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 1rem;
-
-  flex: 1;
+ 
 
   margin: 0 auto;
   background-color: #130429;
@@ -274,61 +21,146 @@ h2 {
 
 
 }
-
-.lienMemePage button {
-  margin: 10px;
-
-  border: solid 2.5px #152d37;
-  border-radius: 16%;
-  padding: 1% 2%;
-
-  cursor: pointer;
-  color: rgb(5, 0, 1);
-
-  font-weight: bold;
-
+.entete {
+ display: flex;
+ justify-content: center;
 
 }
 
-/******************/
-/* Ajouter une règle de média query pour les écrans plus petits */
-@media (max-width: 768px) {
-  .container {
-    margin-top: 50px;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  .projectcontent {
+/* Styles pour le titre */
+.container h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #29f5c7;
+}
+
+.projectdescription {
+  margin-left: 10PX;
+}
+
+.projectdescription h2 {
+  font-size: 20px;
+  margin-top: 10;
+  color: #29f5c7;
+}
+
+/* Styles pour les paragraphes de projet */
+.projectdescription p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Styles pour la section des boutons */
+.lienMemePage {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styles pour les boutons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0074d9;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #dde4eb;
+}
+
+/* Styles pour les sections de projet */
+.projectpage {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #4f6e80;
+}
+
+/* Styles pour les images de projet */
+.projectimage {
+  flex: 1;
+  text-align: center;
+}
+
+.projectimage img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles pour la description de projet */
+.projectdescription {
+  flex: 2;
+  padding-left: 20px;
+}
+
+/* Styles pour la liste des outils */
+.tools {
+  display: flex;
+}
+
+.toolItem {
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Styles pour le bouton "Learn More" */
+.button {
+  width: 140px;
+  background-color: #130429;
+
+  color: #29f5c7;
+  border: solid #29f5c7;
+  
+  padding: 0.3rem 0.5rem;
+
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+ text-decoration: none;;
+}
+
+.button:hover {
+  background-color: #121414;
+  border: solid 2px #29f5c7;
+  ;
+  color: #dae0e5;
+}
+
+.button::after {
+  content: "→";
+  margin-left: 5px;
+}
+
+/* Styles spécifiques pour les écrans de largeur inférieure ou égale à 768px */
+@media (max-width: 850px) {
+  
+  
+
+  .projectpage {
+    display: flex;
     flex-direction: column;
   }
 
-  .projectdescription .projectimage img {
-    max-width: 100%;
-  }
-
-
-  img {
-    width: 98%;
-    height: 300px;
-
-
-
-  }
-
-  .lienMemePage button {
-    font-size: 8px;
-    margin: 2px;
-  }
-  .container h1::before {
-
-    content: "";
-    position: absolute;
-    top: -15px;
-    /* Ajustez la position du triangle vers le haut */
-    left: 40%;
-    transform: translateX(-40%);
-    /* Centre le triangle horizontalement */
-    border-width: 0 200px 10px 200px;
-   
+  
+  .projectdescription {
+    margin-left: 0px;
   }
   
+
 }
