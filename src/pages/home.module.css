@@ -43,7 +43,7 @@ p {
 
 
 .detailButton {
-    width: 20%;
+    width: 300px;
     background-color: #130429;
 
     color: #29f5c7;
@@ -81,10 +81,8 @@ p {
         font-size: 1rem;
         margin: 20px;
         color: #e6e4ee;}
-        .detailButton {
-            width: 30%;
-        }
-}
+
+    }
 
 
 /* Media Query pour écran jusqu'à 768px */
@@ -106,15 +104,9 @@ p {
         align-items: center;
     }   
 
-    .detailButton {
-        padding: 1vw 2vw;
-        font-size: 3vw;
-    }
+   
     p {
         font-size: 1rem;
         margin: 20px;
         color: #e6e4ee;}
-        .detailButton {
-            width: 30%;
-        }
-}
+    }

@@ -67,6 +67,7 @@ const Project = () => {
         </div>
       </section>
 
+
       <section className={styles.projectpage} ref={desktopProjectRef}>
         <div className={styles.projectimage}>
           <img src={desktop} alt="Project" />
@@ -94,6 +95,7 @@ const Project = () => {
         </div>
 
       </section>
+      
 
       <section className={styles.projectpage} ref={melanomaDetectionRef}>
         <div className={styles.projectimage}>

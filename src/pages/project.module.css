@@ -120,10 +120,10 @@
 
 /* Styles pour le bouton "Learn More" */
 .button {
-  width: 140px;
-  background-color: #130429;
+  width: 160px;
+  background-color: #2d184d;
 
-  color: #29f5c7;
+  color: #8a9492;
   border: solid #29f5c7;
   
   padding: 0.3rem 0.5rem;
