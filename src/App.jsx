@@ -6,6 +6,9 @@ import Contact from './pages/contact';
 import Project from './pages/project';
 import Home from './pages/home';
 import Page404 from './pages/page404';
+import Web from './pages/web';
+import Destop from './pages/destop';
+import Mobile from './pages/mobile';
 
 
 
@@ -18,6 +21,10 @@ function App() {
         <Route path='/about' element={<><Header /><About /></>}></Route>
         <Route path='/project' element={<><Header /><Project /></>}></Route>
         <Route path='/contact' element={<><Header /><Contact /></>}></Route>  
+        <Route path='/web' element={<><Header /><Web /></>}></Route>  
+        <Route path='/destop' element={<><Header /><Destop /></>}></Route> 
+        <Route path='/mobile' element={<><Header /><Mobile /></>}></Route> 
+        
         <Route path="*" element={<Page404 />}></Route>   
         
       </Routes>

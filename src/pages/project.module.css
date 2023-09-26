@@ -1,36 +1,37 @@
 /* Styles pour le conteneur principal */
-/************la partie fixe**/
 .lienMemePage {
-  width: 300PX;
+  width: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
-
   margin: 0 auto;
   background-color: #130429;
-  border-right: 2.5px solid#29f5c7;
-  /* Bordure en haut en rouge */
-  border-bottom: 5px solid #bdd7e2;
-  /* Bordure en bas en violet */
-  border-left: 2.5px solid #29f5c7;
-  /* Bordure à gauche en rouge */
+  border: 2.5px solid #29f5c7; /* Bordure en rouge */
+  border-bottom: 5px solid #bdd7e2; /* Bordure en violet en bas */
   box-shadow: 2px 3px #a55b70;
-
-
-
-
 }
-.entete {
- display: flex;
- justify-content: center;
 
+.titre {
+  width: 100%;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.customTab {
+  margin-top: 20px !important;
+  margin-right: 1px !important;
+  width: 2px !important;
+  border: solid 1px !important;
+  border-radius: 10px !important;
+  color: #29f5c7 !important; /* Assurez-vous d'utiliser !important pour forcer la priorité */
+  font-size: 14px !important;
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 30px auto;
+  padding: 2px;
 }
 
 /* Styles pour le titre */
@@ -40,14 +41,10 @@
   color: #29f5c7;
 }
 
-.projectdescription {
-  margin-left: 10PX;
-}
-
-.projectdescription h2 {
+#WebProject {
   font-size: 20px;
   margin-top: 10;
-  color: #29f5c7;
+  color: #f52929 !;
 }
 
 /* Styles pour les paragraphes de projet */
@@ -106,6 +103,10 @@
   padding-left: 20px;
 }
 
+.projectdescription h2 {
+  color: #29f5c7;
+}
+
 /* Styles pour la liste des outils */
 .tools {
   display: flex;
@@ -114,6 +115,7 @@
 .toolItem {
   margin-right: 10px;
   background-color: #f0f0f0;
+  color: #121414;
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -122,24 +124,20 @@
 .button {
   width: 160px;
   background-color: #2d184d;
-
   color: #8a9492;
   border: solid #29f5c7;
-  
   padding: 0.3rem 0.5rem;
-
   font-size: 20px;
   cursor: pointer;
   border-radius: 10px;
   transition: background-color 0.3s ease;
- text-decoration: none;;
+  text-decoration: none;
 }
 
 .button:hover {
   background-color: #121414;
   border: solid 2px #29f5c7;
-  ;
-  color: #dae0e5;
+  color: #aab0b6;
 }
 
 .button::after {
@@ -147,20 +145,22 @@
   margin-left: 5px;
 }
 
-/* Styles spécifiques pour les écrans de largeur inférieure ou égale à 768px */
+/* Styles spécifiques pour les écrans de largeur inférieure ou égale à 850px */
 @media (max-width: 850px) {
-  
-  
+  .container h1 {
+    font-size: 30px;
+  }
 
   .projectpage {
     display: flex;
     flex-direction: column;
   }
 
-  
   .projectdescription {
     margin-left: 0px;
   }
-  
 
+  .customTab {
+    font-size: 10px !important;
+  }
 }

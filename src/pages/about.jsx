@@ -6,8 +6,7 @@ const Container = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
-position: relative;
-z-index: 1;
+
 align-items: center;
 `
 
@@ -18,6 +17,7 @@ justify-content: space-between;
 align-items: center;
 flex-direction: column;
 width: 100%;
+
 max-width: 1100px;
 gap: 12px;
 margin-top:20px;
@@ -31,10 +31,10 @@ font-size: 42px;
 text-align: center;
 font-weight: 600;
 margin-top: 20px;
-color: #29f5c7;;
+color: #29f5c7;
   @media (max-width: 768px) {
-margin-top: 40px;
-      font-size: 32px;
+ margin-top: 12px;
+      font-size: 30px;
   }
 `;
 
@@ -125,7 +125,8 @@ const SkillImage = styled.img`
 
 const About = () => {
   return (
-    <Container id="skills">
+  <div className="cont">
+     <Container id="skills">
       <Wrapper>
         <Title>Skills</Title>
         <Desc>Here are some of my skills on which I have been working on for the past 2 years.
@@ -148,6 +149,9 @@ const About = () => {
         </SkillsContainer>
       </Wrapper>
     </Container>
+
+  </div>
+   
   )
 }
 
