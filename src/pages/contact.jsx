@@ -37,7 +37,7 @@ const validate = (values) => {
 export default function Contact() {
     const handleSubmit = async (values, { setSubmitting, resetForm }) => {
         try {
-            await axios.post("http://localhost:3004/send-email", values);
+            await axios.post("https://young-encouraging-glade.glitch.me/send-email", values);
             alert("Email sent successfully!");
             resetForm(); // Réinitialiser le formulaire avec un objet vide
         } catch (error) {
