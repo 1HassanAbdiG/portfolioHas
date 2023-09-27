@@ -3,7 +3,7 @@ import {  NavLink } from 'react-router-dom'; // Pour gérer la navigation
 import myPhoto from "../imges/hassan.png";
 
 
-import Pdf from "../doc/CVHassan.pdf"
+import Pdf from "../doc/cv anglais.pdf"
 
 import styles from "./herder.module.css"
 function Header() {
