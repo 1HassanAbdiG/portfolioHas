@@ -176,9 +176,9 @@ export default function Contact() {
                         </span>{" "}
                         Ottawa,
                     </p>
-                    <p>
-                        <a href="YOUR_LINKEDIN_PROFILE_URL_HERE">
-                            <img src={linkldn} alt="LinkedIn Profile" /> <spam> Add my LinkedIn link</spam>
+                    <p className="linkedin">
+                        <a href="https://github.com/dashboard">
+                            <img src={linkldn} alt="LinkedIn Profile" /> <spam> My LinkedIn </spam>
 
                         </a>
                     </p>

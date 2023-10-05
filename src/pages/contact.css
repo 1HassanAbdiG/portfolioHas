@@ -110,7 +110,19 @@ button {
   border-radius: 50px;
   box-shadow: 4px 8px #29f5c7, -1em 2em #140a34;
 }
+.linkedin{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+ 
+}
+.linkedin a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8d9392;
 
+}
 
 @media screen and (max-width:1000px) {
   .conteneur1 {
