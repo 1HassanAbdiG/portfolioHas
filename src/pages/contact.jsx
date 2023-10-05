@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik } from "formik";
 import axios from "axios";
 import "./contact.css";
 import linkldn from "../imges/linkedin.png";
+import Loader from "../component/loader";
 
 const initialValues = {
     name: "",
@@ -35,8 +36,11 @@ const validate = (values) => {
 };
 
 export default function Contact() {
+    const[loader ,setLoader]=useState(false)
     const handleSubmit = async (values, { setSubmitting, resetForm }) => {
+       
         try {
+            setLoader(true)
             await axios.post("https://young-encouraging-glade.glitch.me/send-email", values);
             alert("Email sent successfully!");
             resetForm(); // Réinitialiser le formulaire avec un objet vide
@@ -47,16 +51,18 @@ export default function Contact() {
             resetForm(); // Réinitialiser le formulaire avec un objet vide
         } finally {
             setSubmitting(false);
+            setLoader(false)
 
 
         }
         window.reload()
 
 
+
     };
 
 
-    return (
+    if (loader) {return(<Loader></Loader>)} else return (
         <div className="conteneur">
             <h1>Need more information? I'm here for you!</h1>
             <p>Whether it's to answer your questions, discuss your specific needs,
