@@ -25,7 +25,7 @@ function Header() {
             <nav className={`${styles.nav} ${navActive ? styles.active : ''} `}>
                 <ul className={styles.navList}>
                     <li className={styles.navItem}><NavLink to="/" className={({ isActive }) => (isActive ? styles.actif : "black")}><span>H</span>ome</NavLink></li>
-                    <li className={styles.navItem}><NavLink to="/about" className={({ isActive }) => (isActive ? styles.actif : "black")}><span>S</span>kill</NavLink></li>
+                    <li className={styles.navItem}><NavLink to="/about" className={({ isActive }) => (isActive ? styles.actif : "black")}><span>Sk</span>ill</NavLink></li>
                     <li className={styles.navItem}><NavLink to="/project" className={({ isActive }) => isActive ? styles.actif : ''}><span>P</span>roject</NavLink></li>
                     <li className={styles.navItem}><NavLink to="/contact" className={({ isActive }) => isActive ? styles.actif : ''}><span>C</span>ontact</NavLink></li>
                     <li><a href={Pdf} target='_blank' rel="noopener noreferrer" ><span className={styles.resume}>Resume</span></a></li>

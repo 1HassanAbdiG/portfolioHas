@@ -74,6 +74,18 @@ svg {
 	height: 150px;
 	width: 150px;
 }
+.d{
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+.d a{
+  
+  width: 20%;
+  
+  
+}
 
 
 

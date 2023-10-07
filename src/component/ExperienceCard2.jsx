@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Document = styled.img`
     display: none;
     height: 70px;
-    width: fit-content;
+    width:50px;    
     background-color: #000;
     border-radius: 10px;
     &:hover{
@@ -142,8 +142,6 @@ const Skill = styled.div`
         font-size: 12px;
     }
 `
-
-
 
 
 const MobileCard = ({ mobile }) => {
