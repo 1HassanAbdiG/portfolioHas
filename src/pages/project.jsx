@@ -11,6 +11,7 @@ import styles from "./project.module.css"; // Assurez-vous que le chemin du fich
 import myPhoto from "../imges/R.jpeg";
 import survey from "../imges/web.jpg";
 import desktop from "../imges/photoInfor.jpg";
+import tic from "../imges/ticta.jpeg";
 import moblie from "../imges/developpement-mobile.jpg";
 import resto from "../imges/resto.jpg";
 
@@ -45,10 +46,6 @@ CustomTabPanel.propTypes = {
 
 
 export default function Project() {
-
-
-
-
   return (
 
     <div className={styles.container}>
@@ -144,7 +141,7 @@ export default function Project() {
         </div>
 
         <div className={styles.projectdescription}>
-          <h2  >IOS end endroid</h2>
+          <h2  >IOS and Android</h2>
 
 
           <div className={styles.projectInfo}>
@@ -190,6 +187,35 @@ export default function Project() {
           <a href="https://restoomega.netlify.app/" className={styles.button}>Learn More&nbsp;</a>
         </div>
       </section>
+      <section className={styles.projectpage}>
+      <div className={styles.projectimage}>
+        <img src={tic} alt="Project" />
+      </div>
+      <div className={styles.projectdescription}>
+        <h2 id="TicTacToeProject">Tic-Tac-Toe Project</h2>
+
+        <div className={styles.projectInfo}>
+          <p className={styles.openingStatement}>
+            This project involved developing a web-based Tic-Tac-Toe game using React. The objective of the application is to provide a fun and interactive way to play the classic game of Tic-Tac-Toe with friends.
+          </p>
+          <div className={styles.tools}>
+            <div className={styles.toolItem}>React</div>
+            <div className={styles.toolItem}>JavaScript</div>
+            <div className={styles.toolItem}>CSS</div>
+          </div>
+          <p className={styles.projectImpact}>
+            This experience allowed me to gain practical experience in building interactive web applications with React. I learned how to manage game state, implement game logic, and create an engaging user interface. Additionally, I gained insights into the importance of user experience and user-friendly design in game development.
+          </p>
+        </div>
+
+        <Link to="/tictactoe" className={styles.button}>
+          Learn More&nbsp;
+        </Link>
+        <a href="https://tictactoeh.netlify.app/" className={styles.button}> Learn More&nbsp;</a>
+        
+      </div>
+    </section>
+
 
 
 

@@ -336,7 +336,7 @@ export const destop = [
         "role": "Développeur d'Applications de Bureau - Gestion d'École",
         "company": "Study Project",
         "date": "2022",
-        "desc": "j'ai développé une application de bureau en Java pour la gestion d'une école, avec pour objectif de simplifier efficacement la gestion des données académiques. Le projet a utilisé Java pour le développement principal et XML pour la manipulation de données structurées. En combinant ces technologies avec le JDK et SQLite, l'application est devenue robuste et fonctionnelle, permettant la gestion des étudiants, des cours et des notes de manière optimale.",
+        "desc": "I developed a desktop application in Java with the aim of simplifying the management of academic data within a school. For this project, I primarily used Java for software development, and I also employed XML to structure the data. By combining the JDK (Java Development Kit) with SQLite, this application became robust and functional, significantly enhancing the management of students, courses, and grades.",
         "skills": [
             "Java",
             "WPF",
@@ -359,8 +359,8 @@ export const destop = [
         "img": "https://github.com/1HassanAbdiG/portfolioHas1/blob/master/XCEL_emp.png?raw=true",
         "role": "Développeur d'Applications de Bureau ",
         "company": "La lorraine djibouti",
-        "date": "2010",
-        "desc": "En 20XX, j'ai dirigé un projet visant à améliorer la gestion des salariés au sein d'une société de prestation de services. J'ai développé une solution personnalisée en utilisant Microsoft Excel et VBA (Visual Basic for Applications) pour automatiser efficacement la gestion des dossiers des employés, la gestion des heures travaillées, et d'autres tâches essentielles. Cette approche a optimisé la gestion des ressources humaines, réduit les erreurs et amélioré l'efficacité opérationnelle de l'entreprise.",
+        "date": "2018",
+        "desc": "In 2018, I undertook a program aimed at improving employee management within a service provider company. I developed a customized solution using Microsoft Excel and VBA (Visual Basic for Applications) to effectively automate the management of employee records, time tracking, and other essential tasks. This approach optimized human resources management, reduced errors, and enhanced the operational efficiency of the company.",
         "skills": [
             "Microsoft Excel",
             "VBA (Visual Basic for Applications)"
@@ -375,38 +375,44 @@ export const destop = [
 ];
 export const mobile = [
     {
+
         "id": 0,
         "img": "https://github.com/1HassanAbdiG/portfolioHas1/blob/master/Image1.png?raw=true",
-        "role": "Développeur d'Applications Mobiles - Projet iOS",
-        "company": "Projet Personnel",
-        "date": "2021",
-        "desc": "En 2021, j'ai développé une application de gestion de tâches pour la plateforme iOS. Mon travail consistait à concevoir et à développer une application intuitive permettant aux utilisateurs de créer, gérer et suivre leurs tâches quotidiennes. J'ai utilisé Swift comme langage de programmation principal et les outils de développement iOS pour créer une expérience utilisateur fluide et conviviale.",
+        "role": "Mobile Application Developer - iOS Project",
+        "company": "Personal Project",
+        "date": "2022",
+        "desc": "In 2022, I worked on an iOS project aimed at enhancing the restaurant experience by enabling customers to place orders. I used Swift as the primary programming language and iOS development tools to create a smooth and user-friendly experience. This application allowed customers to view the menu, place orders, and make payments conveniently, thereby improving the restaurant's efficiency and providing a pleasant experience for users.",
         "skills": [
             "Swift",
-            "Développement iOS",
-            "Interface utilisateur mobile",
-            "Gestion de données"
+            "iOS Development",
+            "Mobile User Interface",
+            "Data Management"
         ],
+          
+          
         doc: [
             "https://github.com/1HassanAbdiG/portfolioHas1/blob/master/Image1.png?raw=true",
             "https://github.com/1HassanAbdiG/portfolioHas1/blob/master/Image3.png?raw=true",
             "https://github.com/1HassanAbdiG/portfolioHas1/blob/master/Image2.png?raw=true"
-           
+
         ]
     },
     {
         "id": 1,
-        "img": "URL_DE_VOTRE_IMAGE_DU_PROJET_ANDROID",
-        "role": "Développeur d'Applications Mobiles - Projet Android",
-        "company": "Projet Personnel",
-        "date": "2022",
-        "desc": "En 2022, j'ai entrepris un projet de développement d'une application Android dédiée au suivi de la condition physique. Mon objectif était de créer une application robuste qui permet aux utilisateurs de suivre leurs activités physiques, leur alimentation et leur progression. J'ai utilisé Java comme langage de programmation et les outils de développement Android pour créer une application conviviale avec une interface utilisateur attrayante.",
-        "skills": [
-            "Java",
-            "Développement Android",
-            "Suivi de la condition physique",
-            "Interface utilisateur mobile"
-        ],
+        
+         "img": "URL_DE_VOTRE_IMAGE_DU_PROJET_ANDROID",
+            "role": "Développeur d'Applications Mobiles - Projet Android",
+            "company": "Projet en Classe",
+            "date": "2021",
+            "desc": "In 2021, I undertook small Android projects in class with the aim of creating an interactive card game. My goal was to develop an application for playing various card games and learning their rules. I also completed other small projects. I used Java as the programming language and Android development tools to design an intuitive user interface and engaging game features.",
+            "skills": [
+              "Java",
+              "Développement Android",
+              "Jeux de Cartes",
+              "Interface utilisateur mobile"
+            ],
+          
+          
         doc: [
             "https://github.com/1HassanAbdiG/portfolioHas/blob/master/excel_emplpng.png?raw=true",
             "https://github.com/1HassanAbdiG/portfolioHas1/blob/master/XCEL_emp.png?raw=true"

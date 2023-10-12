@@ -9,6 +9,7 @@ import Page404 from './pages/page404';
 import Web from './pages/web';
 import Destop from './pages/destop';
 import Mobile from './pages/mobile';
+import Tictactoe from './component/tictactoe';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/web' element={<><Header /><Web /></>}></Route>  
         <Route path='/destop' element={<><Header /><Destop /></>}></Route> 
         <Route path='/mobile' element={<><Header /><Mobile /></>}></Route> 
+        <Route path='/tictactoe' element={<><Header /><Tictactoe /></>}></Route> 
         
         <Route path="*" element={<Page404 />}></Route>   
         

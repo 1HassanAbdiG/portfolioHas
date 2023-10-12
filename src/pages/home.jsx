@@ -21,6 +21,7 @@ function Home() {
       <Link to="/project" className={styles.detailButton}>
         View Projects &nbsp;
       </Link>
+      
 
 
 

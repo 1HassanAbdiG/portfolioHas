@@ -36,9 +36,9 @@ const validate = (values) => {
 };
 
 export default function Contact() {
-    const[loader ,setLoader]=useState(false)
+    const [loader, setLoader] = useState(false)
     const handleSubmit = async (values, { setSubmitting, resetForm }) => {
-       
+
         try {
             setLoader(true)
             await axios.post("https://young-encouraging-glade.glitch.me/send-email", values);
@@ -62,128 +62,129 @@ export default function Contact() {
     };
 
 
-    if (loader) {return(<Loader></Loader>)} else return (
+    if (loader) { return (<Loader></Loader>) } else return (
         <div className="conteneur">
             <h1>Need more information? I'm here for you!</h1>
-            <p>Whether it's to answer your questions, discuss your specific needs,
-                or simply to say hello, please don't hesitate to contact us using the form below.
-                We look forward to hearing from you and assisting you to the best of our abilities.
-                Your message is important to us, and we are committed to responding to you promptly.</p>
-           
-                <Formik
-                    initialValues={initialValues}
-                    validate={validate}
-                    onSubmit={handleSubmit}
-                >
-                    {(formik) => (
-                        <div className="conteneur1">
-                            <h1>Send a Message</h1>
-                            <form action="mailto:someone@example.com" method="post" enctype="text/plain"></form>
-                            <form onSubmit={formik.handleSubmit}
-                                action="mailto:someone@example.com"
-                                method="post"
-                                enctype="text/plain">
-                                <div className="form-row">
-                                    <label htmlFor="name">Name</label>
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        id="name"
-                                        placeholder="Nom"
-                                        value={formik.values.name}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        className={
-                                            formik.errors.name && formik.touched.name ? "input-error" : null
-                                        }
-                                    />
-                                    {formik.errors.name && formik.touched.name && (
-                                        <span className="error">{formik.errors.name}</span>
-                                    )}
-                                </div>
+            <p>Whether to ask questions, discuss specific projects or just say hello,
+                feel free to use the form below. Your message is important to me,
+                and I undertake to respond to you as soon as possible.<br></br>
+                Thank you for taking the time to contact me.</p>
+                
 
-                                <div className="form-row">
-                                    <label htmlFor="email">Email</label>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        id="email"
-                                        placeholder="courriel@domaine.com"
-                                        value={formik.values.email}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        className={
-                                            formik.errors.email && formik.touched.email ? "input-error" : null
-                                        }
-                                    />
-                                    {formik.errors.email && formik.touched.email && (
-                                        <span className="error">{formik.errors.email}</span>
-                                    )}
-                                </div>
-
-                                <div className="form-row">
-                                    <label htmlFor="message">Message</label>
-                                    <textarea
-                                        rows="8"
-                                        cols="80"
-                                        placeholder="Mettre un message"
-                                        name="message"
-                                        id="message"
-                                        value={formik.values.message}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        className={
-                                            formik.errors.message && formik.touched.message ? "input-error" : null
-                                        }
-                                    />
-                                    {formik.errors.message && formik.touched.message && (
-                                        <span className="error">{formik.errors.message}</span>
-                                    )}
-                                </div>
-
-                                <button
-                                    type="submit"
+            <Formik
+                initialValues={initialValues}
+                validate={validate}
+                onSubmit={handleSubmit}
+            >
+                {(formik) => (
+                    <div className="conteneur1">
+                        <h1>Send a Message</h1>
+                        <form action="mailto:someone@example.com" method="post" enctype="text/plain"></form>
+                        <form onSubmit={formik.handleSubmit}
+                            action="mailto:someone@example.com"
+                            method="post"
+                            enctype="text/plain">
+                            <div className="form-row">
+                                <label htmlFor="name">Name</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Nom"
+                                    value={formik.values.name}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
                                     className={
-                                        !formik.dirty || !formik.isValid
-                                            ? "disabled-btn"
-                                            : "disabled-btn1"
+                                        formik.errors.name && formik.touched.name ? "input-error" : null
                                     }
-                                    disabled={!formik.dirty || !formik.isValid}
-                                >
-                                    Send the Message
-                                </button>
-                            </form>
-                        </div>
-                    )}
-                </Formik>
+                                />
+                                {formik.errors.name && formik.touched.name && (
+                                    <span className="error">{formik.errors.name}</span>
+                                )}
+                            </div>
 
-                <div className="info">
-                    <h1>Contactez-nous</h1>
-                    <p>                      
-                            📞
-                       
-                        343 998-366
-                    </p>
-                    <p>
-                        <span role="img" aria-label="email">
-                            ✉️
-                        </span>{" "}
-                        hassanabdigaleb@gmail.com
-                    </p>
-                    <p>
-                        <span role="img" aria-label="location">
-                            🏠
-                        </span>{" "}
-                        Ottawa,
-                    </p>
-                    <p className="linkedin">
-                        <a href="https://github.com/dashboard">
-                            <img src={linkldn} alt="LinkedIn Profile" /> <spam> My LinkedIn </spam>
+                            <div className="form-row">
+                                <label htmlFor="email">Email</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="courriel@domaine.com"
+                                    value={formik.values.email}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    className={
+                                        formik.errors.email && formik.touched.email ? "input-error" : null
+                                    }
+                                />
+                                {formik.errors.email && formik.touched.email && (
+                                    <span className="error">{formik.errors.email}</span>
+                                )}
+                            </div>
 
-                        </a>
-                    </p>
-                </div>
+                            <div className="form-row">
+                                <label htmlFor="message">Message</label>
+                                <textarea
+                                    rows="8"
+                                    cols="80"
+                                    placeholder="Mettre un message"
+                                    name="message"
+                                    id="message"
+                                    value={formik.values.message}
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    className={
+                                        formik.errors.message && formik.touched.message ? "input-error" : null
+                                    }
+                                />
+                                {formik.errors.message && formik.touched.message && (
+                                    <span className="error">{formik.errors.message}</span>
+                                )}
+                            </div>
+
+                            <button
+                                type="submit"
+                                className={
+                                    !formik.dirty || !formik.isValid
+                                        ? "disabled-btn"
+                                        : "disabled-btn1"
+                                }
+                                disabled={!formik.dirty || !formik.isValid}
+                            >
+                                Send the Message
+                            </button>
+                        </form>
+                    </div>
+                )}
+            </Formik>
+
+            <div className="info">
+                <h1>Contactez-nous</h1>
+                <p>
+                    📞
+
+                    343 998-366
+                </p>
+                <p>
+                    <span role="img" aria-label="email">
+                        ✉️
+                    </span>{" "}
+                    hassanabdigaleb@gmail.com
+                </p>
+                <p>
+                    <span role="img" aria-label="location">
+                        🏠
+                    </span>{" "}
+                    Ottawa,
+                </p>
+                <p className="linkedin">
+                    <a href="https://github.com/dashboard">
+                        <img src={linkldn} alt="LinkedIn Profile" /> <spam> My LinkedIn </spam>
+
+                    </a>
+                </p>
             </div>
-     
+        </div>
+
     );
 }

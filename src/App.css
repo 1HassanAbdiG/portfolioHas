@@ -76,15 +76,10 @@ svg {
 }
 .d{
   display: flex;
-  justify-content: space-between;
-  
-  
+  justify-content: space-between; 
 }
-.d a{
-  
-  width: 20%;
-  
-  
+.d a{  
+  width: 20%; 
 }
 
 
