@@ -208,9 +208,7 @@ export default function Project() {
           </p>
         </div>
 
-        <Link to="/tictactoe" className={styles.button}>
-          Learn More&nbsp;
-        </Link>
+        
         <a href="https://tictactoeh.netlify.app/" className={styles.button}> Learn More&nbsp;</a>
         
       </div>
