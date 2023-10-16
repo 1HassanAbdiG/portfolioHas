@@ -3,6 +3,7 @@ import { Formik } from "formik";
 import axios from "axios";
 import "./contact.css";
 import linkldn from "../imges/linkedin.png";
+import github from "../imges/github_.png";
 import Loader from "../component/loader";
 
 const initialValues = {
@@ -69,7 +70,7 @@ export default function Contact() {
                 feel free to use the form below. Your message is important to me,
                 and I undertake to respond to you as soon as possible.<br></br>
                 Thank you for taking the time to contact me.</p>
-                
+
 
             <Formik
                 initialValues={initialValues}
@@ -163,7 +164,7 @@ export default function Contact() {
                 <p>
                     📞
 
-                    343 998-366
+                    343 998-3660
                 </p>
                 <p>
                     <span role="img" aria-label="email">
@@ -177,12 +178,19 @@ export default function Contact() {
                     </span>{" "}
                     Ottawa,
                 </p>
-                <p className="linkedin">
+                <p className="github">
                     <a href="https://github.com/dashboard">
-                        <img src={linkldn} alt="LinkedIn Profile" /> <spam> My LinkedIn </spam>
+                        <img src={github} alt="github Profile" /> <spam> My github </spam>
 
                     </a>
                 </p>
+                <p className="github">
+                    <a href="https://www.linkedin.com/in/hassan-abdi-galeb-4667a61b5/">
+                        <img src={linkldn} alt="linkdin Profile" /> <spam> My linkedin </spam>
+
+                    </a>
+                </p>
+
             </div>
         </div>
 
