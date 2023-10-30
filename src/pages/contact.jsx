@@ -179,7 +179,7 @@ export default function Contact() {
                     Ottawa,
                 </p>
                 <p className="github">
-                    <a href="https://github.com/dashboard">
+                    <a href="https://github.com/">
                         <img src={github} alt="github Profile" /> <spam> My github </spam>
 
                     </a>

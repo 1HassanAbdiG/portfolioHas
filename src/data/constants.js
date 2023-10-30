@@ -414,8 +414,8 @@ export const mobile = [
           
           
         doc: [
-            "https://github.com/1HassanAbdiG/portfolioHas/blob/master/excel_emplpng.png?raw=true",
-            "https://github.com/1HassanAbdiG/portfolioHas1/blob/master/XCEL_emp.png?raw=true"
+            "",
+            ""
         ]
     }
 
